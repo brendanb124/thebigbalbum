@@ -146,46 +146,50 @@ body {
     }
 
     html, body {
-        height: 100%;
         margin: 0;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
     }
 
     .tracks {
-        height: 100vh;
+        min-height: 100svh;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1.2vh
-        padding: 1.5vh 4vw;
+        gap: 1rem;
+        padding: 1rem 1.25rem;
         box-sizing: border-box;
     }
 
     .tracks h1 {
-        font-size: clamp(1.6rem, 5.5vw, 2.2rem);
+        font-size: clamp(1.8rem, 6vw, 2.4rem);
         margin: 0;
         text-align: center;
-        line-height: 1.1;
+        line-height: 1.15;
     }
 
     .tracks h2 {
-        font-size: clamp(0.95rem, 3.8vw, 1.2rem);
+        font-size: clamp(1.1rem, 4.5vw, 1.4rem);
         margin: 0;
         text-align: center;
-        line-height: 1.1;
+        line-height: 1.15;
     }
 
     audio {
         width: 100%;
-        max-width: 340px;
-        height: 30px;
+        max-width: 420px;
+        height: 44px;
     }
 
     .tracks > div {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0.3vh;
+        gap: 0.5rem;
+        width: 100%;
     }
 }
+
